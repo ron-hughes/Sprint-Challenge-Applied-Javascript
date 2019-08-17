@@ -35,6 +35,12 @@ function ArticleCard(data) {
     const span = document.createElement('span')
 ``
 
+
+    // Adding content to elements from parameters
+    headline.textContent = data.headline
+    image.src = data.authorPhoto
+    span.textContent = data.authorName
+
     
     
     
