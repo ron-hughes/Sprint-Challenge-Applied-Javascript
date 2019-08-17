@@ -29,3 +29,9 @@ const spanTemp = document.createElement('span')
     return div
 
 }
+
+let headerContainer = document.querySelector('.header-container');
+
+let header = Header()
+
+headerContainer.appendChild(header)
