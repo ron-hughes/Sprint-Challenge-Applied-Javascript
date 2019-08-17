@@ -18,9 +18,7 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-
-function ArticleCard(data) {
-
+function ArticleCard(data){
     // Creating DOM elements
     const cardDiv = document.createElement('div')
         cardDiv.classList.add('card')
@@ -33,24 +31,21 @@ function ArticleCard(data) {
     const image = document.createElement('img')
 
     const span = document.createElement('span')
-``
-
 
     // Adding content to elements from parameters
     headline.textContent = data.headline
     image.src = data.authorPhoto
     span.textContent = data.authorName
 
+    // appending elements to DOM
+    cardDiv.appendChild(headline)
+    cardDiv.appendChild(author)
+    author.appendChild(imgContainer)
+    imgContainer.appendChild(image)
+    author.appendChild(span)
 
-      // appending elements to DOM
-      cardDiv.appendChild(headline)
-      cardDiv.appendChild(author)
-      author.appendChild(imgContainer)
-      imgContainer.appendChild(image)
-      author.appendChild(span)
-  
-      // Always return data
-      return cardDiv
+    // Always return data
+    return cardDiv
 }
 
 
