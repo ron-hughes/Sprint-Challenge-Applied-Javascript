@@ -17,4 +17,10 @@ const spanDate = document.createElement('span')
 const h1 = document.createElement('h1')
 const spanTemp = document.createElement('span')
     spanTemp.classList.add('temp')
+
+    spanDate.textContent = 'MARCH 28, 2019'
+    h1.textContent = 'Lambda Times'
+    spanTemp.textContent = '98°'
+
+    
 }
