@@ -22,5 +22,10 @@ const spanTemp = document.createElement('span')
     h1.textContent = 'Lambda Times'
     spanTemp.textContent = '98°'
 
-    
+    div.appendChild(spanDate)
+    div.appendChild(h1)
+    div.appendChild(spanTemp)
+
+    return div
+
 }
