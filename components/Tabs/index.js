@@ -7,3 +7,13 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+
+function Tab(data) {
+    const div = document.createElement('div')
+        div.classList.add('tab')
+
+   div.innerText = data
+
+    return div
+}
