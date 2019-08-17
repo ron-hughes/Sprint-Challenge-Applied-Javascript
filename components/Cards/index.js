@@ -41,6 +41,16 @@ function ArticleCard(data) {
     image.src = data.authorPhoto
     span.textContent = data.authorName
 
+
+      // appending elements to DOM
+      cardDiv.appendChild(headline)
+      cardDiv.appendChild(author)
+      author.appendChild(imgContainer)
+      imgContainer.appendChild(image)
+      author.appendChild(span)
+  
+      // Always return data
+      return cardDiv
     
     
     
