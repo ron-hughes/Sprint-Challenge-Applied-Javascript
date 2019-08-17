@@ -17,3 +17,15 @@ function Tab(data) {
 
     return div
 }
+
+let topicsDiv = document.querySelector(".topics")
+
+axios.get('https://lambda-times-backend.herokuapp.com/topics')
+    .then((response) => {
+        let data = response.data
+        data.topics.forEach(e => {
+            let tab = Tab(e)
+            topicsDiv.appendChild(tab)
+            // console.log(data)       
+        })
+        }) 
